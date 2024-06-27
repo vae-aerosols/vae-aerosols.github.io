@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Leveraging Variational Autoencoders (VAEs) for Classification of Anthropogenic Aerosols">
+  <!-- <meta name="keywords" content="Imitation Learning, Cross-Embodiment"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CrossFormer</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Leveraging Variational Autoencoders (VAEs) for Classification of Anthropogenic Aerosols</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Aaryan Doshi
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img id="teaser" src="./static/images/vae.png" alt="Teaser Image"/>
+          <h2 class="subtitle has-text-centered">
+              our method is the first to xxx
+          </h2>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The Single Particle Soot Photometer (SP2) detects refractory aerosol particle mass via laser-induced incandescence (L-II). While SP2s have traditionally been used to quantify black carbon aerosol mass in the atmosphere, they are increasingly being used to detect and quantify other types of absorbing aerosols, such as mineral dust or anthropogenically-sourced iron oxide aerosols. This would allow us to gain greater insight into the chemio-physical properties of atmospheric aerosols and their contribution to climate change. Supervised machine learning algorithms have shown potential to classify different types of aerosols from L-II signals, but these methods are sensitive to instrument configuration and require training datasets generated from laboratory samples, which do not generalize well to ambient atmospheric aerosols. Here we explore the effectiveness of an unsupervised deep learning method, a variational autoencoder (VAE), applied directly to L-II signals from the SP2 in order to classify different types of absorbing aerosols. The VAE compresses L-II signals into a bottleneck “latent” representation and reconstructs an output as similar as possible to the input signal, thereby reducing dimensionality. We apply this approach to a dataset comprised of laboratory samples of materials that show detectable incandescence in the SP2, including fullerene soot (as a proxy for black carbon), coated fullerene soot, fly ash, mineral dust, volcanic ash, hematite, and magnetite. We explore optimal latent representations of L-II signals to maximize separability of different aerosol classes by varying the size of the latent representation, ultimately improving our understanding of the chemio-physical properties of aerosols and their contribution to atmospheric emissions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Abstract. -->
+
+<!-- Architecture Diagram -->
+<!-- <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img id="teaser" src="./static/images/crossformer_teaser.png" alt="CrossFormer teaser image."/>
+        <p style="text-align:center"> CrossFormer Architecture.</p>
+      </div>
+    </div>
+    
+</section> -->
+<!--/ Architecture Diagram. -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title">Results</h2>
+        </div>
+        <p>
+          Here we present three figures: the first shows <>, the second demonstrates <>, and the third <>.
+        </p>
+        <br>
+        
+        <h3 class="title is-4">Latent Encodings</h3>
+        <div class="content has-text-justified">
+          <p> 
+            explain this figure
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-full-width has-text-centered">
+            <img id="teaser" src="./static/images/latent.png" alt="Latent Image"/>
+          </div>
+        </div>
+        <br/>
+        
+       <h3 class="title is-4">Manifold</h3>
+       <div class="content has-text-justified">
+         <p> 
+           explain this figure
+         </p>
+       </div>
+       <div class="columns is-vcentered interpolation-panel">
+         <div class="column is-full-width has-text-centered">
+           <img id="teaser" src="./static/images/manifold0.png" alt="Manifold Image 0"/>
+           <img id="teaser" src="./static/images/manifold1.png" alt="Manifold Image 1"/>
+         </div>
+       </div>
+       <br/>
+
+       <h3 class="title is-4">Comparison of Latent Representations</h3>
+       <div class="content has-text-justified">
+         <p> 
+           explain this figure
+         </p>
+       </div>
+       <div class="columns is-vcentered interpolation-panel">
+         <div class="column is-full-width has-text-centered">
+           <img id="teaser" src="./static/images/confusion_matrix.png" alt="Confusion Matrix"/>
+         </div>
+       </div>
+       <br/>
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+
+<section class="section" id="baseline_comp">
+  <div class="container is-max-desktop">
+
+    <!-- Comparison to Yang et. al. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title">Impact</h2>
+        </div>
+        <p>
+          explain impact
+        </p>
+        <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This website was adapted from the following <a
+          href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
