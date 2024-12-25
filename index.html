@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Leveraging Variational Autoencoders (VAEs) for Classification of Anthropogenic Aerosols">
+        content="Discovery of Properties of Atmospheric Aerosols for Targeted Climate Control via Variational Autoencoder">
   <!-- <meta name="keywords" content="Imitation Learning, Cross-Embodiment"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aerosols VAE</title>
@@ -33,7 +33,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Leveraging Variational Autoencoders (VAEs) for Classification of Anthropogenic Aerosols</h1>
+          <h1 class="title is-1 publication-title">Discovery of Properties of Atmospheric Aerosols for Targeted Climate Control via Variational Autoencoder</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               Aaryan Doshi
@@ -63,7 +63,7 @@
 <section class="hero teaser">
     <div class="container is-max-desktop">
         <div class="hero-body">
-          <img id="teaser" src="./static/images/new_flow.png" alt="Teaser Image"/>
+          <img id="teaser" src="./static/images/Overview_Diag.png" alt="Teaser Image"/>
           <h2 class="subtitle has-text-left">
               Our method is the first to classify aerosols with a global warming potential and identify their chemical and physical properties. Utilizing the Single Particle Soot Photometer along with a form of unsupervised machine learning, 
             we can help guide regulatory practices for these aerosols. By preventing the high concentration of these aerosols in atmosphere, we can mitigate anthropogenic climate change.
@@ -81,7 +81,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The Single Particle Soot Photometer (SP2) detects refractory aerosol particle mass via laser-induced incandescence (L-II). While SP2s have traditionally been used to quantify black carbon aerosol mass in the atmosphere, they are increasingly being used to detect and quantify other types of absorbing aerosols, such as mineral dust or anthropogenically-sourced iron oxide aerosols. This would allow us to gain greater insight into the chemio-physical properties of atmospheric aerosols and their contribution to climate change. Supervised machine learning algorithms have shown potential to classify different types of aerosols from L-II signals, but these methods are sensitive to instrument configuration and require training datasets generated from laboratory samples, which do not generalize well to ambient atmospheric aerosols. Here we explore the effectiveness of an unsupervised deep learning method, a variational autoencoder (VAE), applied directly to L-II signals from the SP2 in order to classify different types of absorbing aerosols. The VAE compresses L-II signals into a bottleneck “latent” representation and reconstructs an output as similar as possible to the input signal, thereby reducing dimensionality. We apply this approach to a dataset comprised of laboratory samples of materials that show detectable incandescence in the SP2, including fullerene soot (as a proxy for black carbon), coated fullerene soot, fly ash, mineral dust, volcanic ash, hematite, and magnetite. We explore optimal latent representations of L-II signals to maximize separability of different aerosol classes by varying the size of the latent representation, ultimately improving our understanding of the chemio-physical properties of aerosols and their contribution to atmospheric emissions.
+            Harnessing aerosols to cool the climate has immense potential to counteract anthropogenic global warming. However, reliably predicting the cooling effect from such techniques is immensely challenging due to poor understanding of the chemical and physical properties of aerosols. To this end, my project focuses on developing a computational platform that takes raw aerosol signals from a specialized instrument used in ground-based and airborne field studies to measure aerosols, and provides an accurate classification of their properties by using a variational autoencoder (VAE). First, I trained the VAE on a large pool of unlabeled aerosol signals, learning patterns between raw signals that make each aerosol unique and clustering similar aerosols together. Next, a new, unseen signal was passed into the trained VAE, which encoded the signal into a latent representation extracting its most relevant features. Finally, this latent representation was compared to the latent representations determined by thousands of previous observations to identify  key information about the aerosol’s properties based on aerosols with similar latent representations. This unsupervised machine learning approach reduces reconstruction error loss by ~23.3 compared to past metrics that rely on alternative clustering approaches such as Principal Component Analysis – PCA. The VAE generalizes well to real-time ambient atmospheric aerosols and does not require training datasets from laboratory samples. By uncovering properties like saturation, incandescent intensity, and peak height with high precision, my platform significantly advances interpretation of aerosol observations. This work is significant because it furthers public understanding of the properties of atmospheric aerosols so they can effectively be used in the future to address global warming by cooling the climate.
           </p>
         </div>
       </div>
@@ -112,7 +112,7 @@
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-full-width has-text-centered">
-            <img id="teaser" src="./static/images/individualAerosolClass_channel_0 (1).png" alt="Latent Image"/>
+            <img id="teaser" src="./static/images/2D_Channel 0_new.png" alt="Latent Image"/>
           </div>
         </div>
         <div class="content has-text-justified">
@@ -122,7 +122,7 @@
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-full-width has-text-centered">
-            <img id="teaser" src="./static/images/individualAerosolClass_channel_1 (1).png" alt="Teaser Image"/>
+            <img id="teaser" src="./static/images/2D_Channel 1_new.png" alt="Teaser Image"/>
           </div>
         </div>
         <div class="content has-text-justified">
@@ -132,7 +132,7 @@
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-full-width has-text-centered">
-            <img id="teaser" src="./static/images/3D_individualAerosolClass (6).png" alt="Latent Image3"/>
+            <img id="teaser" src="./static/images/3D_Channel 0_New.png" alt="Latent Image3"/>
           </div>
         </div>
         <div class="content has-text-justified">
@@ -141,7 +141,7 @@
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-full-width has-text-centered">
-            <img id="teaser" src="./static/images/3D_individualAerosolClass_channel_1 (4).png" alt="Latent Image4"/>
+            <img id="teaser" src="./static/images/3D_Channel 1_New.png" alt="Latent Image4"/>
           </div>
         </div>
         <br/>
@@ -149,48 +149,15 @@
        <h3 class="title is-4">Latent Manifold</h3>
        <div class="content has-text-justified">
          <p> 
-           2D Representation Channel 0: The saturation of signals shows flatness at the peaks, which is more common for larger particles like Arizona Test Dust, California Fly Ash, and Virginia Ash. The
-           iron oxide aerosols Fe2O3 and Fe3O4 have more common symmetric scattering signals and a greater
-           incandescent intensity. Here, we define incandescent intensity as the extent to which an aerosol particle
-           burns up in the Single Particle Soot Photometer:
+           After encoding the SP2 signals into the latent space, the trained decoder can be used to map out the latent space representations in terms of representative channel 0 and channel 1 time series. These latent manifolds illustrate specific physical and chemical properties of the aerosol time series signals such as symmetry, saturation, and incandescent intensity (Figure 7). The saturation of signals in the channel 0 time series (Figure 7, left panel) shows flatness at the peaks, which is more common for larger particles like Arizona Test Dust, California Fly Ash, and Virginia Ash (as the scattering detector becomes saturated for these large particles, and the peaks are artificially flattened). The iron oxide aerosols Fe2O3 and Fe3O4 have more common symmetric scattering signals and a greater incandescent intensity. The peak height of the incandescent signal is known to be proportional to the total mass of an aerosol particle.
          </p>
        </div>
        <div class="columns is-vcentered interpolation-panel">
          <div class="column is-full-width has-text-centered">
-           <img id="teaser" src="./static/images/manifold0.png" alt="Manifold Image 0"/>
+           <img id="teaser" src="./static/images/manifold.png" alt="Manifold Image 0"/>
          </div>
        </div>
-        <div class="content has-text-justified">
-         <p> 
-           2D Representation Channel 1: The latent manifold for channel one highlights that fullerene soot and coated
-           fullerene soot have more skewed incandescent signals compared to Fe2O3 and Fe3O4, which are
-           symmetrical. This skewed representation is also indicative of particles like fullerene having a lower
-           saturation:
-         </p>
-       </div>
-       <div class="columns is-vcentered interpolation-panel">
-         <div class="column is-full-width has-text-centered">
-           <img id="teaser" src="./static/images/manifold0.png" alt="Manifold Image 0"/>
-         </div>
-       </div>
-        
-       <br/>
-
-       <h3 class="title is-4">Comparison of Latent Representations</h3>
-       <div class="content has-text-justified">
-         <p> 
-           Left: 2D Latent Space Confusion Matrix. Right: 3D Latent Space Confusion Matrix. Iron oxide aerosol classes (5 and 6) are able to achieve the highest separability; however the difference across dimensions is 
-           negligible. This supervised machine learning approach of the random forest algorithm also further validates the latent representation 
-           graphs outputted by the variational autoencoder: 
-         </p>
-       </div>
-       <div class="columns is-vcentered interpolation-panel">
-         <div class="column is-full-width has-text-centered">
-           <img id="teaser" src="./static/images/confusion_matrix.png" alt="Confusion Matrix"/>
-         </div>
-       </div>
-       <br/>
-      </div>
+       <br/>       
     </div>
     <!--/ Animation. -->
 
