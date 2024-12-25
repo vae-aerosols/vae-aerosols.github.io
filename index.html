@@ -2,21 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Discovery of Properties of Atmospheric Aerosols for Targeted Climate Control via Variational Autoencoder">
-  <!-- <meta name="keywords" content="Imitation Learning, Cross-Embodiment"> -->
+  <meta name="description" content="Discovery of Properties of Atmospheric Aerosols for Targeted Climate Control via Variational Autoencoder">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aerosols VAE</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.png">
 
@@ -35,22 +30,17 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Discovery of Properties of Atmospheric Aerosols for Targeted Climate Control via Variational Autoencoder</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              Aaryan Doshi
+            <span class="author-block">Aaryan Doshi</span>
           </div>
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-            </div>
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
           </div>
         </div>
       </div>
@@ -58,151 +48,99 @@
   </div>
 </section>
 
-
-
 <section class="hero teaser">
-    <div class="container is-max-desktop">
-        <div class="hero-body">
-          <img id="teaser" src="./static/images/Overview_Diag.png" alt="Teaser Image"/>
-          <h2 class="subtitle has-text-left">
-              Our method is the first to classify aerosols with a global warming potential and identify their chemical and physical properties. Utilizing the Single Particle Soot Photometer along with a form of unsupervised machine learning, 
-            we can help guide regulatory practices for these aerosols. By preventing the high concentration of these aerosols in atmosphere, we can mitigate anthropogenic climate change.
-          </h2>
-        </div>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img class="teaser-image" src="./static/images/Overview_Diag.png" alt="Teaser Image"/>
+      <h2 class="subtitle has-text-left">
+        Our method is the first to classify aerosols with a global warming potential and identify their chemical and physical properties. Utilizing the Single Particle Soot Photometer along with a form of unsupervised machine learning, we can help guide regulatory practices for these aerosols. By preventing the high concentration of these aerosols in atmosphere, we can mitigate anthropogenic climate change.
+      </h2>
     </div>
+  </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Harnessing aerosols to cool the climate has immense potential to counteract anthropogenic global warming. However, reliably predicting the cooling effect from such techniques is immensely challenging due to poor understanding of the chemical and physical properties of aerosols. To this end, my project focuses on developing a computational platform that takes raw aerosol signals from a specialized instrument used in ground-based and airborne field studies to measure aerosols, and provides an accurate classification of their properties by using a variational autoencoder (VAE). First, I trained the VAE on a large pool of unlabeled aerosol signals, learning patterns between raw signals that make each aerosol unique and clustering similar aerosols together. Next, a new, unseen signal was passed into the trained VAE, which encoded the signal into a latent representation extracting its most relevant features. Finally, this latent representation was compared to the latent representations determined by thousands of previous observations to identify  key information about the aerosol’s properties based on aerosols with similar latent representations. This unsupervised machine learning approach reduces reconstruction error loss by ~23.3 compared to past metrics that rely on alternative clustering approaches such as Principal Component Analysis – PCA. The VAE generalizes well to real-time ambient atmospheric aerosols and does not require training datasets from laboratory samples. By uncovering properties like saturation, incandescent intensity, and peak height with high precision, my platform significantly advances interpretation of aerosol observations. This work is significant because it furthers public understanding of the properties of atmospheric aerosols so they can effectively be used in the future to address global warming by cooling the climate.
+            Harnessing aerosols to cool the climate has immense potential to counteract anthropogenic global warming. However, reliably predicting the cooling effect from such techniques is immensely challenging due to poor understanding of the chemical and physical properties of aerosols. To this end, my project focuses on developing a computational platform that takes raw aerosol signals from a specialized instrument used in ground-based and airborne field studies to measure aerosols, and provides an accurate classification of their properties by using a variational autoencoder (VAE). First, I trained the VAE on a large pool of unlabeled aerosol signals, learning patterns between raw signals that make each aerosol unique and clustering similar aerosols together. Next, a new, unseen signal was passed into the trained VAE, which encoded the signal into a latent representation extracting its most relevant features. Finally, this latent representation was compared to the latent representations determined by thousands of previous observations to identify key information about the aerosol’s properties based on aerosols with similar latent representations. This unsupervised machine learning approach reduces reconstruction error loss by ~23.3 compared to past metrics that rely on alternative clustering approaches such as Principal Component Analysis – PCA. The VAE generalizes well to real-time ambient atmospheric aerosols and does not require training datasets from laboratory samples. By uncovering properties like saturation, incandescent intensity, and peak height with high precision, my platform significantly advances interpretation of aerosol observations. This work is significant because it furthers public understanding of the properties of atmospheric aerosols so they can effectively be used in the future to address global warming by cooling the climate.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!--/ Abstract. -->
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <div class="columns is-centered has-text-centered">
           <h2 class="title">Results</h2>
         </div>
         <p>
-          Here we present eight figures displaying the latent space visualizations, manifolds and confusion matrices for a 2D and 3D dimensionality latent space:
+          Here we present eight figures displaying the latent space visualizations, manifolds, and confusion matrices for a 2D and 3D dimensionality latent space:
         </p>
         <br>
         
         <h3 class="title is-4">Latent Space</h3>
         <div class="content has-text-justified">
-          <p> 
-            2D Representation, Channel 0 (Optical Size): Clear separation achieved between the iron oxide classes. California Fly Ash and Arizona Test Dust are prone to random scattering due to black body ratiation:
+          <p>
+            2D Representation, Channel 0 (Optical Size): Clear separation achieved between the iron oxide classes. California Fly Ash and Arizona Test Dust are prone to random scattering due to black body radiation:
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-full-width has-text-centered">
-            <img id="teaser" src="./static/images/2D_Channel 0_new.png" alt="Latent Image"/>
+            <img class="teaser-image" src="./static/images/2D_Channel 0_new.png" alt="2D Latent Space Channel 0"/>
           </div>
         </div>
         <div class="content has-text-justified">
-          <p> 
+          <p>
             2D Representation, Channel 1 (Chemical-Physical Property Channel): For the blue incandescent channel, the iron oxide aerosols once again achieve high separability. Random scattering for smaller particles like dust and ash are expected due to atmospheric conditions:
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-full-width has-text-centered">
-            <img id="teaser" src="./static/images/2D_Channel 1_new.png" alt="Teaser Image"/>
+            <img class="teaser-image" src="./static/images/2D_Channel 1_new.png" alt="2D Latent Space Channel 1"/>
           </div>
         </div>
         <div class="content has-text-justified">
-          <p> 
+          <p>
             3D Representation, Channel 0 (Optical Size Channel): The autoencoder achieves much better separability with higher latent space dimension. Classes such as Fe3O4 and Fe2O3 are easily distinguishable – as is FSglyc and FS. The irregularity of clustering for CFA and VA is due to their unpredictable signal as they travel within the Single Particle Soot Photometer:
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-full-width has-text-centered">
-            <img id="teaser" src="./static/images/3D_Channel 0_New.png" alt="Latent Image3"/>
+            <img class="teaser-image" src="./static/images/3D_Channel 0_New.png" alt="3D Latent Space Channel 0"/>
           </div>
         </div>
         <div class="content has-text-justified">
-          <p> 
-           3D Representation, Channel 1 (Chemical-Physical Property Channel): Likewise with the first channel, the autoencoder achieves much better separability as the number of latent dimensions increased to three. Clustering is evident for classes such as Fe3O4, Fe2O3, FS, and Fglyc as particles are concentrated in certain sections:          </p>
+          <p>
+            3D Representation, Channel 1 (Chemical-Physical Property Channel): Likewise with the first channel, the autoencoder achieves much better separability as the number of latent dimensions increased to three. Clustering is evident for classes such as Fe3O4, Fe2O3, FS, and Fglyc as particles are concentrated in certain sections:
+          </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-full-width has-text-centered">
-            <img id="teaser" src="./static/images/3D_Channel 1_New.png" alt="Latent Image4"/>
+            <img class="teaser-image" src="./static/images/3D_Channel 1_New.png" alt="3D Latent Space Channel 1"/>
           </div>
         </div>
         <br/>
         
-       <h3 class="title is-4">Latent Manifold</h3>
-       <div class="content has-text-justified">
-         <p> 
-           After encoding the SP2 signals into the latent space, the trained decoder can be used to map out the latent space representations in terms of representative channel 0 and channel 1 time series. These latent manifolds illustrate specific physical and chemical properties of the aerosol time series signals such as symmetry, saturation, and incandescent intensity (Figure 7). The saturation of signals in the channel 0 time series (Figure 7, left panel) shows flatness at the peaks, which is more common for larger particles like Arizona Test Dust, California Fly Ash, and Virginia Ash (as the scattering detector becomes saturated for these large particles, and the peaks are artificially flattened). The iron oxide aerosols Fe2O3 and Fe3O4 have more common symmetric scattering signals and a greater incandescent intensity. The peak height of the incandescent signal is known to be proportional to the total mass of an aerosol particle.
-         </p>
-       </div>
-       <div class="columns is-vcentered interpolation-panel">
-         <div class="column is-full-width has-text-centered">
-           <img id="teaser" src="./static/images/manifold.png" alt="Manifold Image 0"/>
-         </div>
-       </div>
-       <br/>       
-    </div>
-    <!--/ Animation. -->
-
-
-<section class="section" id="baseline_comp">
-  <div class="container is-max-desktop">
-
-    <!-- Comparison to Yang et. al. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <div class="columns is-centered has-text-centered">
-          <h2 class="title">Impact</h2>
+        <h3 class="title is-4">Latent Manifold</h3>
+        <div class="content has-text-justified">
+          <p>
+            After encoding the SP2 signals into the latent space, the trained decoder can be used to map out the latent space representations in terms of representative channel 0 and channel 1 time series. These latent manifolds illustrate specific physical and chemical properties of the aerosol time series signals such as symmetry, saturation, and incandescent intensity. The saturation of signals in the channel 0 time series shows flatness at the peaks, which is more common for larger particles like Arizona Test Dust, California Fly Ash, and Virginia Ash. The iron oxide aerosols Fe2O3 and Fe3O4 have more common symmetric scattering signals and a greater incandescent intensity. The peak height of the incandescent signal is known to be proportional to the total mass of an aerosol particle.
+          </p>
         </div>
-        <p>
-          Achieving a nuanced understanding of aerosols at a chemio-physical level is essential for the
-development of accurate climate models and the formulation of effective climate mitigation
-strategies. Enhanced models, informed by detailed knowledge of aerosol behavior, could inspire
-innovative climate engineering solutions aimed at artificially increasing the presence of
-reflective aerosols to counteract global warming.<br><br>
-
-          Our work is the first that doesn’t need tremendously large, painstakingly labeled datasets or
-delicate instrument calibration to properly understand aerosols and generalize. Instead, we focus
-on extracting the key features that comprise aerosols, embedded into a manageable latent space,
-which allows us to classify aerosols much more effectively.<br><br>
-          
-          The implications of my work extend far beyond more effective aerosol classification. Through
-clustering of shared features in our latent space, we can classify aerosols in atmospheric
-conditions that are unseen during training – which is bound to happen given the changes we are
-seeing manifest in our climate. We can quickly identify atmospheric anomalies, new and harmful
-aerosols that arise from human activities, and assess their properties to quickly determine
-diagnoses. We can generate new training samples by using cluster-based label propagation,
-allowing us to dramatically increase the amount of aerosol data available to use without needing
-any complex instrumentation to collect it. This approach overcomes the limitations inherent in
-supervised learning, offering a scalable and efficient pathway to gain critical insights into the
-atmospheric aerosols that contribute to emissions.<br><br>
-
-          With improved understanding of aerosols, strategies such as Stratospheric Aerosol Injection (SAI), Cloud Albedo Enhancement, and Solar Radiation Management (SRM) could see substantial advancements. Enhanced knowledge about the reflective properties of different
-aerosols could inform the selection of materials for SRM projects, ensuring they are both effective and minimize unintended consequences. Similarly, Cloud Albedo Enhancement, which
-involves seeding clouds with particles to increase their reflectivity and thus cool the planet,
-would benefit from a nuanced understanding of which aerosol types are most efficient at cloud
-brightening without adversely affecting cloud precipitation patterns. Lastly, SAI can capitalize on the potentially cooling effect of aerosols to counteract the widespread rate of global warming.
-
-          
-        </p>
-        <br>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-full-width has-text-centered">
+            <img class="teaser-image" src="./static/images/manifold.png" alt="Manifold Image"/>
+          </div>
+        </div>
+        <br/>
       </div>
     </div>
   </div>
@@ -212,8 +150,7 @@ brightening without adversely affecting cloud precipitation patterns. Lastly, SA
   <div class="container">
     <div class="content has-text-centered">
       <p>
-        This website was adapted from the following <a
-          href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+        This website was adapted from the following <a href="https://github.com/nerfies/nerfies.github.io">source code</a>.
       </p>
     </div>
   </div>
